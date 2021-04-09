@@ -1,13 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Journal</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Journal</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+  </head>
+
+  <body>
+    <header>
+      <div><span>Lab 2 Journal</span></div>
+      <nav>
+        <ul>
+          <li><a href="#monday">Monday</a></li>
+          <li><a href="#tuesday">Tuesday</a></li>
+          <li><a href="#wednesday">Wednesday</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+ 
+        <summary><h1 id="monday"> Monday</h1></summary>
+      <section>
+        <h2>Classes</h2>
+        <ul>
+          <li>None!</li>
+        </ul>
+        <img 
+        src="https://en.meming.world/images/en/thumb/1/13/Thumbs_Up_Crying_Cat.jpg/300px-Thumbs_Up_Crying_Cat.jpg"
+        alt="cat"
+        width="250"
+        >
+      </section>
+      <hr>
+
+      <h1 id="tuesday"> Tuesday</h2>
+        <section>
+          <h2>Classes</h2>
+          <ul>
+            <li>CSE 101 Lecture</li>
+            <li>CSE 110 Lecture</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Notes</h2>
+          <ol>
+            <li><h3>CSE 101</h3></li>
+            <section>Learned about graph reachability using <i>BFS</i> and <i>DFS</i>. Also analyzed time and space compelexity of the the respective algorithms.</section>
+            <li><h3>CSE 110</h3></li>
+            <section>More memes. Teams assigned and <strong>project announced soon!</strong></section>
+          </ol>
+        </section>
+
+        <section>
+          <details>
+            <summary>
+            <h2>Video of the Day</h2>
+          </summary>
+          <section><iframe width="420" height="315"
+            src="https://www.youtube.com/embed/HluANRwPyNo?controls=0">
+            </iframe></section>
+          </details>
+        </section>
+        <hr>
   
-</body>
+      <h1 id="wednesday"> Wednesday</h2>
+        <section>
+          <h2>Classes</h2>
+          <ul>
+            <li>CSE 110 Lab</li>
+            <li>EDS 124AR Discussion</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Notes</h2>
+          <ol>
+            <li><h3>CSE 110</h3></li>
+            <section>The lab is about HTML. Haven't used it before but shouldn't be too difficult.</section>
+            <li><h3>EDS 124AR</h3></li>
+            <section><b>TA is chill</b>. Looking forward to class, but gotta finish week 1 material <em>asap!</em></section>
+          </ol>
+        </section>
+
+        <section>
+          <details>
+            <summary><h2>Song of the Day</h2></summary>
+            <h3><u>telepatía</u> by Kali Uchis</h3>
+            <audio controls src="audio/telapatia.mp3"></audio>
+          </details>
+        </section>
+        <hr>
+  
+    </main>
+
+    <footer>
+
+      <br>
+  
+      <form>
+        <fieldset>
+          <legend>Create a new entry.</legend>
+          <label for="date"><b>Choose a date</b>
+          <input type="date" id="date" name="date">
+          <br/><br>
+          <legend><b>Classes</b></legend>
+          <input type="checkbox" id="CSE 110 Lecture" name="CSE 110 Lecture">
+          <label for="CSE 110 Lecture">CSE 110 Lecture</label><br>
+          Notes: <input type="text" id="CSE110Lecture Notes" name="CSE110Lecture Notes"><br>
+          <input type="checkbox" id="CSE 110 Lab" name="CSE 110 Lab">
+          <label for="CSE 110 Lab">CSE 110 Lab</label><br>
+          Notes: <input type="text" id="CSE110Lab Notes" name="CSE110Lab Notes"><br>
+          <input type="checkbox" id="CSE 101 Lecture" name="CSE 101 Lecture">
+          <label for="CSE 101 Lecture">CSE 101 Lecture</label><br>
+          Notes: <input type="text" id="CSE101Lecture Notes" name="CSE101Lecture Notes"><br>
+          <input type="checkbox" id="EDS 124AR Discussion" name="EDS 124AR Discussion">
+          <label for="EDS 124AR Discussion">EDS 124AR Discussion</label><br>
+          Notes: <input type="text" id="EDS124AR Notes" name="EDS124AR Notes"><br><br>
+            <legend><b>Media:</b></legend>
+          <input type="radio" id="image" name="image">
+          <label for="image">Image</label><br/>
+          <input type="radio" id="audio" name="audio">
+          <label for="audio">Audio</label><br/>
+          <input type="radio" id="video" name="video">
+          <label for="video">Video</label><br/>
+          <input type="button" value="Upload media">
+        </fieldset>
+      </form>
+  
+    </footer>
+    <input type="button" value="Create new entry">
+  </body>
 </html>
